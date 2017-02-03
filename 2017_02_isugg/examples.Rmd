@@ -1,0 +1,33 @@
+---
+title: Examples
+author: "Ian Lyttle"
+date: "2017-02-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library("vembedr")
+```
+
+Easiest way to use is to grab the URL from the browser:
+
+```{r}
+embed_url("https://www.youtube.com/watch?v=uV4UpCq2azs")
+```
+
+Note: the "daily" build of RStudio lets you 
+
+
+```{r}
+embed_url("https://youtu.be/1-vcErOPofQ?t=28s")
+```
+
+Get the suggested R code to embed:
+
+```{r}
+suggest_embed("https://www.youtube.com/watch?v=uV4UpCq2azs")
+```
+
+```{r}
+suggest_embed("https://youtu.be/1-vcErOPofQ?t=28s")
+```
